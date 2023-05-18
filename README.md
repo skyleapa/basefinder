@@ -1,16 +1,14 @@
-# Frostbite Engine Base Map Optimizer
+# Base Map Optimizer
 
-As a miniproject (and way to help EA map designers), I created the Frostbite Engine base optimizer! 
+Map generation and design is extremely important in games, as it can affect the gameflow and different player strategies. I noticed that in most game maps, different teams have opposing bases placed the furthest apart. This allows players to plan their routes, and endorse map exploration/utilization.
 
-Map generation and design is extremely important in games, as it can affect the gameflow and different player strategies. I noticed that in most (even non-Frostbite) maps, different teams have opposing bases placed the furthest apart. This allows players to plan their routes, and endorse map exploration/utilization.
+I developed an algorithm based on BFS traversal and distance encoding, which will provide a structured path that simulates where we would expect a base to be on a map. From a specified starting point, the algorithm finds the distances of every pixel on the map's paths, deeming the base to be at the ***longest shortest path*** from the start. It renders the path on the image to visualize where this base would be.
 
-I developed a simple algorithm based on BFS traversal and distance encoding, which will provide a structured path that simulates where we would expect a base to be on a map. From a specified starting point, the algorithm finds the distances of every pixel on the map's paths, deeming the base to be at the ***longest shortest path*** from the start. It renders the path on the image to visualize where this base would be.
-
-This project was meant to practice my C++ skills, and help visualize what it would be like working to help make the workflows of game developers at Electronic Arts more efficient. 
+This project was meant to practice my C++ skills and knowledge of algorithms. 
 
 # Theory
 
-Using this program, you can input different maps from all kinds of Frostbite (or any!) games, and it can find the best path between the enemy's base, and yours. It does so by finding the **longest shortest path**, which is explained further in my algorithm below. 
+Using this program, you can input different maps from all kinds of games, and it can find the best path between the enemy's base, and yours. It does so by finding the **longest shortest path**, which is explained further in the algorithm below. 
 
 ## TreasureMap Algorithm
 
@@ -27,7 +25,6 @@ All functions of stack and queue are **O(1)** time. This is possible since every
 ## TreasureMap 
 
 treasureMap.cpp uses a form of image steganography to encode images with a "map". By taking in a starting position, base image and map image, it embeds the base image with the map by the following algorithm.
-
 
 ## Maze Values
 
@@ -46,7 +43,7 @@ Each maze distance is computed as follows: Every pixel point p in the image has 
 
 # Installation
 
-The project currently uses the maps `orbital`, `breakaway`, and `renewal`, from Battlefield 2042. 
+The project currently uses the maps `orbital`, `breakaway`, and `renewal` as an example from Battlefield 2042. 
 
 _To view these projects, download a local copy onto your computer, and make sure to have [clang](https://clang.llvm.org/get_started.html) before running the makefile using the command below._
 
@@ -112,5 +109,5 @@ Images were sourced here: https://game8.co/games/Battlefield2042/archives/350466
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#">back to top</a>)</p>
 
