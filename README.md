@@ -1,4 +1,4 @@
-# Base Map Optimizer
+# Base Map Optimizer (C++)
 
 Map generation and design is extremely important in games, as it can affect the gameflow and different player strategies. I noticed that in most game maps, different teams have opposing bases placed the furthest apart. This allows players to plan their routes, and endorse map exploration/utilization.
 
