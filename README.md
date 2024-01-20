@@ -4,7 +4,7 @@ Map generation and design is extremely important in games, as it can affect the 
 
 I developed an algorithm based on BFS traversal and distance encoding, which will provide a structured path that simulates where we would expect a base to be on a map. From a specified starting point, the algorithm finds the distances of every pixel on the map's paths, deeming the base to be at the ***longest shortest path*** from the start. It renders the path on the image to visualize where this base would be.
 
-This project was meant to practice my C++ skills and knowledge of algorithms. 
+This project was meant to practice my C++ skills and knowledge of algorithms. It was developed as a joint project between Darryl Tanzil, and me.
 
 # Theory
 
